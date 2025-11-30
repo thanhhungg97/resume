@@ -1,0 +1,21 @@
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-content {
+  color: #4a5568;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+

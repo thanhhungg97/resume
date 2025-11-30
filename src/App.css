@@ -1,0 +1,41 @@
+.app {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.resume-container {
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 3rem;
+  margin: 2rem 0;
+}
+
+@media print {
+  .app {
+    background: white;
+    padding: 0;
+  }
+  
+  .resume-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+  
+  .resume-container {
+    padding: 1.5rem;
+  }
+}
+
