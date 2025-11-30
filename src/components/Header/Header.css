@@ -33,6 +33,17 @@
   white-space: nowrap;
 }
 
+.contact-link {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .name {
     font-size: 2rem;

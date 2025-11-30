@@ -10,6 +10,28 @@ const Header = () => {
         <span>{personalInfo.email}</span>
         <span>•</span>
         <span>{personalInfo.phone}</span>
+        {personalInfo.location && (
+          <>
+            <span>•</span>
+            <span>{personalInfo.location}</span>
+          </>
+        )}
+        {personalInfo.linkedin && (
+          <>
+            <span>•</span>
+            <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="contact-link">
+              LinkedIn
+            </a>
+          </>
+        )}
+        {personalInfo.github && (
+          <>
+            <span>•</span>
+            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="contact-link">
+              GitHub
+            </a>
+          </>
+        )}
       </div>
     </header>
   )
