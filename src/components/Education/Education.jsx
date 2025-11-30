@@ -1,17 +1,8 @@
-import './Section.css'
+import { education } from '../../data/resumeData'
+import '../../styles/shared.css'
 import './Education.css'
 
 const Education = () => {
-  const education = [
-    {
-      degree: "Bachelor of Science: Computer Science",
-      school: "Bach Khoa University",
-      location: "",
-      period: "10/2015 - 11/2019",
-      details: "GPA: 7.6"
-    }
-  ]
-
   return (
     <section className="section">
       <h2 className="section-title">Education</h2>

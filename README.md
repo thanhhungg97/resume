@@ -19,20 +19,51 @@ npm run dev
 npm run build
 ```
 
+## Project Structure
+
+```
+src/
+  components/          # React components (organized by feature)
+    Header/
+    About/
+    Experience/
+    Education/
+    Skills/
+    Certificates/
+  data/               # Resume data and constants
+    resumeData.js
+  styles/             # Global and shared styles
+    global.css
+    shared.css
+    App.css
+  App.jsx
+  main.jsx
+public/               # Static assets
+scripts/              # Deployment and utility scripts
+```
+
 ## Customizing Your Resume
 
-Edit the component files in `src/components/` to update your information:
+**Update your data in `src/data/resumeData.js`:**
+- `personalInfo` - Name, title, email, phone
+- `about` - Professional summary
+- `experiences` - Work experience array
+- `education` - Education array
+- `skillCategories` - Skills organized by category
+- `certificates` - Certificates array
 
-- **Header.jsx** - Your name and contact information
-- **About.jsx** - Your professional summary
-- **Experience.jsx** - Your work experience (edit the `experiences` array)
-- **Education.jsx** - Your education (edit the `education` array)
-- **Skills.jsx** - Your skills (edit the `skillCategories` array)
-- **Certificates.jsx** - Your certificates (edit the `certificates` array)
+**Component files are in `src/components/[ComponentName]/`:**
+- Each component has its own folder with component file, styles, and index.js
+- Components automatically use data from `resumeData.js`
 
 ## Styling
 
-All styles are in the `src/components/` directory. The color scheme uses a purple gradient theme (#667eea). You can customize colors in the CSS files.
+- **Global styles**: `src/styles/global.css`
+- **Shared styles**: `src/styles/shared.css` (section styles)
+- **Component styles**: Each component has its own CSS file in its folder
+- **App styles**: `src/styles/App.css` (layout and container)
+
+The color scheme uses a purple gradient theme (#667eea). Customize colors in the respective CSS files.
 
 ## Print/PDF
 
@@ -51,5 +82,8 @@ npm run deploy:gh
 
 # AWS S3 (update bucket name in package.json first)
 npm run deploy:aws
+
+# Or use scripts directly:
+./scripts/deploy-aws.ps1 -BucketName "your-bucket-name"
 ```
 

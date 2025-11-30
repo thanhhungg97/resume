@@ -1,15 +1,8 @@
-import './Section.css'
+import { certificates } from '../../data/resumeData'
+import '../../styles/shared.css'
 import './Certificates.css'
 
 const Certificates = () => {
-  const certificates = [
-    {
-      name: "TOEIC",
-      date: "4/2019",
-      score: "700"
-    }
-  ]
-
   return (
     <section className="section">
       <h2 className="section-title">Certificates</h2>

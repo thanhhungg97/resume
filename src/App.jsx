@@ -4,7 +4,7 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Skills from './components/Skills'
 import Certificates from './components/Certificates'
-import './App.css'
+import './styles/App.css'
 
 function App() {
   return (
